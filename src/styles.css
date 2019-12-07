@@ -38,4 +38,40 @@ p {
   box-shadow: inset 0px 2px 0px black;
 }
 
+.navigation__background {
+  height: 1px;
+  width: 1px;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  background-color: #ec6449;
+  z-index: 8;
+  transition: transform 0.8s;
+}
+
+.navigation__menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.8s;
+  display: none;
+  visibility: hidden;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
