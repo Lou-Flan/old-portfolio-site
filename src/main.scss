@@ -1,2 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap');
 
+$heading-font: "Raleway", sans-serif;
+$sub-heading-font: "Roboto Mono", monospace;
+
+$green: rgba(63, 244, 201,1);
+$pink: rgba(255, 192, 203, 1);
+$yellow: rgba(255, 255, 0, 1);
+$orange: rgba(236, 100, 73, 1);
+$black: rgba(0,0,0,1);
+$white: rgba(255, 255, 255, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+}

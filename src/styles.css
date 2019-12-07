@@ -1,3 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
