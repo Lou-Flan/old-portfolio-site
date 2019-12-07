@@ -15,12 +15,16 @@ $white: rgba(255, 255, 255, 1);
     padding: 0;
 }
 
-h1, li {
+li {
     font-family: $heading-font;
 }
 
 p {
     font-family: $sub-heading-font;
+}
+
+body {
+    background-color: $green;
 }
 
 // ##################################################
@@ -130,3 +134,37 @@ p {
       transform: translateY(2px); 
       box-shadow: inset 0px 2px 0px $black; //makes the button look like it has been pushed
   }
+
+// ##################################################
+// MAIN CONTENT OF HOME PAGE - 
+// BACKGROUNDS AND WELCOME HEADINGS
+// ##################################################
+
+.heading-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.heading-primary {
+    color: $white;
+    text-transform: lowercase;
+
+    .main {
+        font-family: $heading-font;
+        display: block;
+        font-size: 6em;
+    }
+
+    .sub {
+        display: block;
+        font-size: 1em;
+        font-family: $sub-heading-font;
+    }
+
+    .background-highlight {
+        background-color: $black;
+    }
+}

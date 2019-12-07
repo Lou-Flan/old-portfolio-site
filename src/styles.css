@@ -4,12 +4,16 @@
   padding: 0;
 }
 
-h1, li {
+li {
   font-family: "Raleway", sans-serif;
 }
 
 p {
   font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #3ff4c9;
 }
 
 .navigation__checkbox {
@@ -103,6 +107,32 @@ p {
 .navigation__checkbox:checked ~ .navigation__button {
   transform: translateY(2px);
   box-shadow: inset 0px 2px 0px black;
+}
+
+.heading-container {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: lowercase;
+}
+.heading-primary .main {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 6em;
+}
+.heading-primary .sub {
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+.heading-primary .background-highlight {
+  background-color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
