@@ -156,6 +156,7 @@ body {
         font-family: $heading-font;
         display: block;
         font-size: 6em;
+        animation: moveInLeft 1s ease-out;
     }
 
     .sub {
@@ -164,7 +165,50 @@ body {
         font-family: $sub-heading-font;
     }
 
-    .background-highlight {
+    .further-sub {
+        display: block;
+        font-size: 1em;
+        font-family: $sub-heading-font;
         background-color: $black;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+    
+    .background-highlight-light {
+        background-color: $white;
+    }
+
+}
+
+// ##################################################
+// TITLE ANIMATIONS
+// ##################################################
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);;
+
+    }
+
+    100% {
+    opacity: 1;
+    transform: translate(0);
     }
 }

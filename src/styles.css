@@ -125,14 +125,48 @@ body {
   font-family: "Raleway", sans-serif;
   display: block;
   font-size: 6em;
+  animation: moveInLeft 1s ease-out;
 }
 .heading-primary .sub {
   display: block;
   font-size: 1em;
   font-family: "Roboto Mono", monospace;
 }
-.heading-primary .background-highlight {
+.heading-primary .further-sub {
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
   background-color: black;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.heading-primary .background-highlight-light {
+  background-color: white;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
