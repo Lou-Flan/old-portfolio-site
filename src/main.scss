@@ -57,25 +57,26 @@ p {
   
   }
 
+// this is hidden behind the menu button and will expand to fill the screen when the menu button has been pressed
   .navigation__background {
-    height: 1px;
-    width: 1px;
-    // border-radius: 0%;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0%;
     position: fixed;
-    top: 5rem;
-    right: 5rem;
+    top: 5rem; //hides the background behind button
+    right: 5rem; //hides the background behind button
     background-color: $orange;
     z-index: 8;
-    transition: transform 0.8s;
+    transition: transform 0s;
 }
 
-.navigation__menu {
+.navigation__container {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10%;
     z-index: 10;
-    transition: all .8s;
+    transition: all .3s;
   
     // sets the menu to not display so it is only visible once the checkbox toggle has been selected by the user
     display: none;
@@ -94,4 +95,38 @@ p {
 
   .navigation__item {
     margin: 1rem;
+  }
+
+  .navigation__link {
+    &:link, &:visited {
+        display: inline-block;
+        font-size: 3rem;
+        color: $black;
+        text-decoration: none;
+        text-transform: lowercase;
+        padding: 0.5rem 2rem;
+        background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, $white 50%);
+        background-size: 220%;
+        transition: all 0.4s;
+    }
+    
+    &:hover, &:active {
+        background-position: 100%;
+        color: $black;
+      }
+  }
+
+// sibling selectors used to change specific elements once the checkbox (nav menu) has been selected by the user 
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(200);
+  }
+
+  .navigation__checkbox:checked ~ .navigation__container {
+    display: block; //will now display the menu on the screen
+    visibility: visible;
+  }
+  
+  .navigation__checkbox:checked ~ .navigation__button {
+      transform: translateY(2px); 
+      box-shadow: inset 0px 2px 0px $black; //makes the button look like it has been pushed
   }
