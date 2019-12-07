@@ -4,4 +4,38 @@
   padding: 0;
 }
 
+h1, li {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  border: black;
+  border-style: solid;
+  border-radius: 50%;
+  z-index: 11;
+  box-shadow: 0 5px 0 black;
+}
+.navigation__button:hover {
+  transform: translateY(5px);
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0);
+}
+.navigation__button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0px 2px 0px black;
+}
+
 /*# sourceMappingURL=styles.css.map */

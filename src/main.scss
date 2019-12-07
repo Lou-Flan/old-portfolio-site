@@ -14,3 +14,45 @@ $white: rgba(255, 255, 255, 1);
     margin: 0;
     padding: 0;
 }
+
+h1, li {
+    font-family: $heading-font;
+}
+
+p {
+    font-family: $sub-heading-font;
+}
+
+// ##################################################
+// NAVIGATION CHECKBOX & BUTTON, BACKGROUND ANIMATION
+// ON CHECKBOX TOGGLE, NAV MENU & MENU ITEM DISPLAY
+// ##################################################
+
+.navigation__checkbox {
+  display: none;
+}
+// button is the styling that the user can see as the menu icon 
+.navigation__button {
+    background-color: $white;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    border: black;
+    border-style: solid;
+    border-radius: 50%;
+    z-index: 11;
+    box-shadow: 0 5px 0 $black;
+  
+      &:hover {
+          transform: translateY(5px);
+          box-shadow: 0 5px 0 rgba(0,0,0,0);
+      }
+  
+      &:active {
+          transform: translateY(2px);
+          box-shadow: inset 0px 2px 0px $black;
+      }
+  
+  }
