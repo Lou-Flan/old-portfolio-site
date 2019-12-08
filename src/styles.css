@@ -13,7 +13,7 @@ p {
 }
 
 body {
-  background-color: #3ff4c9;
+  background-color: #2fd6af;
 }
 
 .navigation__checkbox {
@@ -49,7 +49,7 @@ body {
   position: fixed;
   top: 5rem;
   right: 5rem;
-  background-color: #ec6449;
+  background-color: #fe5d25;
   z-index: 8;
   transition: transform 0s;
 }
@@ -153,10 +153,6 @@ body {
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
-.background-highlight-light {
-  background-color: white;
-}
-
 @keyframes slide-in-left {
   0% {
     transform: translateX(-1000px);
@@ -240,15 +236,15 @@ body {
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #ffce00;
 }
 
 .pink {
-  background-color: pink;
+  background-color: #ff3675;
 }
 
 .green {
-  background-color: #3ff4c9;
+  background-color: #2fd6af;
 }
 
 @media screen and (min-width: 1500px) {
