@@ -286,6 +286,15 @@ body {
     display: block;
   }
 }
+@media screen and (max-height: 620px) {
+  .heading-primary {
+    font-size: 16px;
+  }
+
+  .title__container {
+    display: none;
+  }
+}
 .title__container {
   position: absolute;
   top: 7rem;
@@ -304,7 +313,8 @@ body {
 
 .box {
   margin: 3%;
-  background-color: rgba(255, 0, 0, 0.103);
+  display: inline-block;
+  font-size: 100%;
 }
 .box img {
   visibility: visible;
