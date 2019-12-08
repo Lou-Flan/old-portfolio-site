@@ -136,7 +136,13 @@ body {
 .heading-primary .main {
   font-family: "Raleway", sans-serif;
   display: block;
-  font-size: 6em;
+  font-size: 650%;
+  animation: moveInLeft 1s ease-out;
+}
+.heading-primary .title {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 300%;
   animation: moveInLeft 1s ease-out;
 }
 .heading-primary .sub {
@@ -279,6 +285,49 @@ body {
   .heading-primary .short-text {
     display: block;
   }
+}
+.title__container {
+  position: absolute;
+  top: 7rem;
+  left: 4rem;
+}
+
+.about__container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+.about__container .box {
+  width: 100vw;
+  /* Or whatever */
+  margin: auto;
+  padding: 5%;
+}
+.about__container .item {
+  width: 100%;
+  height: 100%;
+}
+
+#photo {
+  background-image: url(./images/profile-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  height: 250px;
+}
+
+#photo:hover {
+  background-image: url(./images/profile-hover-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  height: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
