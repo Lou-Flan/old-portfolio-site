@@ -180,10 +180,8 @@ body {
     transform: translate(0);
   }
 }
-.button-box {
-  position: absolute;
-  bottom: 4rem;
-  left: 4rem;
+.button-radio {
+  display: none;
 }
 
 .button {
@@ -206,15 +204,50 @@ body {
   box-shadow: inset 0px 2px 0px black;
 }
 
-#yellow {
+#left {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  display: inline-block;
+}
+
+#middle {
+  position: absolute;
+  bottom: 4rem;
+  left: 6rem;
+  display: inline-block;
+}
+
+#right {
+  position: absolute;
+  bottom: 4rem;
+  left: 8rem;
+  display: inline-block;
+}
+
+.colour-background {
+  height: 2px;
+  width: 2px;
+  position: fixed;
+  bottom: 4.5rem;
+  left: 4.25rem;
+  z-index: -1;
+  transition: transform 0s;
+}
+
+.button-radio:checked ~ .colour-background {
+  transform: scale(100000);
+}
+
+.yellow {
   background-color: yellow;
 }
 
-#pink {
+.pink {
   background-color: pink;
 }
 
-#green {
+.green {
   background-color: #3ff4c9;
 }
 
