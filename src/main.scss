@@ -21,6 +21,7 @@ li {
 
 p {
     font-family: $sub-heading-font;
+    font-size: 1.5em;
 }
 
 body {
@@ -136,10 +137,12 @@ body {
 
 .solid-bg {
     width: 100vw;
-    background-color: $green;
+    // background-color: $green;
     height: 6.5rem;
     position: fixed;
     z-index: 10;
+    opacity: .9;
+    
 }
 
 // ##################################################
@@ -181,6 +184,13 @@ body {
         font-size: 200%;
         animation: moveInLeft 1s ease-out;
         // background-color: $black;
+    }
+
+    .subtitle {
+        font-family: $heading-font;
+        display: block;
+        font-size: 175%;
+        animation: moveInLeft 1s ease-out;
     }
 
     .sub {
@@ -368,9 +378,9 @@ body {
         font-size: 16px;
     }
 
-    .title__container {
-        display: none;
-    }
+    // .title__container {
+    //     display: none;
+    // }
 }
 
 
@@ -386,7 +396,6 @@ body {
     position: absolute;
     top: 7rem;
     left: 4rem;
-
 }
 
 .about__container {
@@ -419,6 +428,7 @@ body {
 
     #box-one {
         flex-basis: 100%;
+        font-size: 1.2rem;
     }
 
     #photo, #box-two {
@@ -444,10 +454,28 @@ body {
         }
     }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 800px){
+
+        .pink {
+            background-color: $green;
+        }
+
+        .title__container {
+        
+            left: 3rem;
+        }
         
         #photo, #box-two {
             flex-basis: 100%;
+            // font-size: 1em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .heading-primary .subtitle {
+            font-size: 150%;
         }
 
         .link {

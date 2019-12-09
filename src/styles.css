@@ -10,6 +10,7 @@ li {
 
 p {
   font-family: "Roboto Mono", monospace;
+  font-size: 1.5em;
 }
 
 body {
@@ -111,10 +112,10 @@ body {
 
 .solid-bg {
   width: 100vw;
-  background-color: #2fd6af;
   height: 6.5rem;
   position: fixed;
   z-index: 10;
+  opacity: 0.9;
 }
 
 .long-text {
@@ -151,6 +152,12 @@ body {
   font-family: "Raleway", sans-serif;
   display: block;
   font-size: 200%;
+  animation: moveInLeft 1s ease-out;
+}
+.heading-primary .subtitle {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 175%;
   animation: moveInLeft 1s ease-out;
 }
 .heading-primary .sub {
@@ -298,10 +305,6 @@ body {
   .heading-primary {
     font-size: 16px;
   }
-
-  .title__container {
-    display: none;
-  }
 }
 .strike {
   text-decoration: line-through;
@@ -336,6 +339,7 @@ body {
 
 #box-one {
   flex-basis: 100%;
+  font-size: 1.2rem;
 }
 
 #photo, #box-two {
@@ -355,9 +359,25 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .pink {
+    background-color: #2fd6af;
+  }
+
+  .title__container {
+    left: 3rem;
+  }
+
   #photo, #box-two {
     flex-basis: 100%;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .heading-primary .subtitle {
+    font-size: 150%;
   }
 
   .link {
