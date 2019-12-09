@@ -178,7 +178,7 @@ body {
     .title {
         font-family: $heading-font;
         display: block;
-        font-size: 300%;
+        font-size: 200%;
         animation: moveInLeft 1s ease-out;
         // background-color: $black;
     }
@@ -378,6 +378,9 @@ body {
 // ##################################################
 // ABOUT PAGE
 // ##################################################
+.strike {
+    text-decoration: line-through;
+}
 
 .title__container {
     position: absolute;
@@ -393,41 +396,37 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    // background-color: $yellow;
     width: 80vw;
     // justify-content: center;
 }
 
     .box {
-        margin: 3%;
-        display: inline-block;
+        padding: 3%;
         font-size: 100%;
-        // background-color: rgba(255, 0, 0, 0.103);
+        // background-color: rgba(255, 0, 0,);
+        
         
          img {
+            //  padding: 0;
             visibility: visible;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
+            object-fit: contain;
+            // height: 100%;
             width: 100%;
         }
     }
-    
 
-    #photo:hover {
-        background-image: url(./images/louise-pic-01.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        img {
-            visibility: hidden;
-        }
+    #box-one {
+        flex-basis: 100%;
     }
 
-    // p {
-    //     font-family: $heading-font;
-    // }
+    #photo, #box-two {
+        flex-basis: 44%;
+    }
+
+    
+    
 
     .link {
         
@@ -443,4 +442,16 @@ body {
         &::visited {
             text-decoration: none;
         }
+    }
+
+    @media screen and (max-width: 600px){
+        
+        #photo, #box-two {
+            flex-basis: 100%;
+        }
+
+        .link {
+            background-color: $white;
+        }
+
     }

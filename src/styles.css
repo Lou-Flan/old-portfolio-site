@@ -150,7 +150,7 @@ body {
 .heading-primary .title {
   font-family: "Raleway", sans-serif;
   display: block;
-  font-size: 300%;
+  font-size: 200%;
   animation: moveInLeft 1s ease-out;
 }
 .heading-primary .sub {
@@ -303,6 +303,10 @@ body {
     display: none;
   }
 }
+.strike {
+  text-decoration: line-through;
+}
+
 .title__container {
   position: absolute;
   top: 7rem;
@@ -316,31 +320,26 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 80vw;
 }
 
 .box {
-  margin: 3%;
-  display: inline-block;
+  padding: 3%;
   font-size: 100%;
 }
 .box img {
   visibility: visible;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  object-fit: contain;
   width: 100%;
 }
 
-#photo:hover {
-  background-image: url(./images/louise-pic-01.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#box-one {
+  flex-basis: 100%;
 }
-#photo:hover img {
-  visibility: hidden;
+
+#photo, #box-two {
+  flex-basis: 44%;
 }
 
 .link {
@@ -354,6 +353,16 @@ body {
 }
 .link::visited {
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #photo, #box-two {
+    flex-basis: 100%;
+  }
+
+  .link {
+    background-color: white;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
