@@ -58,7 +58,6 @@ body {
           transform: translateY(2px);
           box-shadow: inset 0px 2px 0px $black;
       }
-  
   }
 
 // this is hidden behind the menu button and will expand to fill the screen when the menu button has been pressed
@@ -70,7 +69,7 @@ body {
     top: 5rem; //hides the background behind button
     right: 5rem; //hides the background behind button
     background-color: $orange;
-    z-index: 8;
+    z-index: 10;
     transition: transform 0s;
 }
 
@@ -423,5 +422,25 @@ body {
         
         img {
             visibility: hidden;
+        }
+    }
+
+    // p {
+    //     font-family: $heading-font;
+    // }
+
+    .link {
+        
+        text-decoration: none;
+        color: $black;
+        font-weight: 1000;
+        background-image: linear-gradient(to top,$white 35%,transparent 35%);
+
+        &:hover {
+            background-color: $white;
+        }
+
+        &::visited {
+            text-decoration: none;
         }
     }
