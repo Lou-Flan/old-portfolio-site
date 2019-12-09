@@ -109,6 +109,14 @@ body {
   box-shadow: inset 0px 2px 0px black;
 }
 
+.solid-bg {
+  width: 100vw;
+  background-color: #2fd6af;
+  height: 6.5rem;
+  position: fixed;
+  z-index: 10;
+}
+
 .long-text {
   display: none;
 }
@@ -136,7 +144,7 @@ body {
 .heading-primary .main {
   font-family: "Raleway", sans-serif;
   display: block;
-  font-size: 650%;
+  font-size: 11rem;
   animation: moveInLeft 1s ease-out;
 }
 .heading-primary .title {
@@ -286,7 +294,7 @@ body {
     display: block;
   }
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 640px) {
   .heading-primary {
     font-size: 16px;
   }

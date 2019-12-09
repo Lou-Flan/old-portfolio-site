@@ -135,6 +135,14 @@ body {
       box-shadow: inset 0px 2px 0px $black; //makes the button look like it has been pushed
   }
 
+.solid-bg {
+    width: 100vw;
+    background-color: $green;
+    height: 6.5rem;
+    position: fixed;
+    z-index: 10;
+}
+
 // ##################################################
 // MAIN CONTENT OF HOME PAGE - 
 // BACKGROUNDS AND WELCOME HEADINGS
@@ -164,7 +172,7 @@ body {
     .main {
         font-family: $heading-font;
         display: block;
-        font-size: 650%;
+        font-size: 11rem;
         animation: moveInLeft 1s ease-out;
     }
 
@@ -189,6 +197,7 @@ body {
         background-color: $black;
         animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     }
+
     
 
 // ##################################################
@@ -354,7 +363,7 @@ body {
     }
 }
 
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 640px) {
 
     .heading-primary {
         font-size: 16px;
