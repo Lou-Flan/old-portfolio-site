@@ -37,19 +37,19 @@ body {
   display: none;
 }
 // button is the styling that the user can see as the menu icon 
-.navigation__button {
+.button {
     background-color: $white;
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    top: 4rem;
-    right: 4rem;
+    // width: 2rem;
+    // height: 2rem;
+    // position: fixed;
+    // top: 4rem;
+    // right: 4rem;
     border: black;
     border-style: solid;
     border-radius: 50%;
     z-index: 11;
     box-shadow: 0 5px 0 $black;
-  
+
       &:hover {
           transform: translateY(5px);
           box-shadow: 0 5px 0 rgba(0,0,0,0);
@@ -61,14 +61,32 @@ body {
       }
   }
 
+  #rectangle {
+    width: 4rem;
+    height: 1rem;
+    border-radius: 0%;
+    text-decoration: none;
+    font-family: $sub-heading-font;
+    text-align: center;
+    padding: 0;
+  }
+
+  #navigation {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 4rem;
+    right: 10%;
+    }
+
 // this is hidden behind the menu button and will expand to fill the screen when the menu button has been pressed
   .navigation__background {
-    height: 1rem;
-    width: 1rem;
+    height: 1px;
+    width: 1px;
     border-radius: 0%;
     position: fixed;
-    top: 5rem; //hides the background behind button
-    right: 5rem; //hides the background behind button
+    top: 10%; //hides the background behind button
+    right: 15%; //hides the background behind button
     background-color: $orange;
     z-index: 10;
     transition: transform 0s;
@@ -122,7 +140,7 @@ body {
 
 // sibling selectors used to change specific elements once the checkbox (nav menu) has been selected by the user 
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(200);
+    transform: scale(200000);
   }
 
   .navigation__checkbox:checked ~ .navigation__container {
@@ -130,7 +148,7 @@ body {
     visibility: visible;
   }
   
-  .navigation__checkbox:checked ~ .navigation__button {
+  .navigation__checkbox:checked ~ #navigation {
       transform: translateY(2px); 
       box-shadow: inset 0px 2px 0px $black; //makes the button look like it has been pushed
   }
@@ -395,7 +413,7 @@ body {
 .title__container {
     position: absolute;
     top: 7rem;
-    left: 4rem;
+    left: 13%;
 }
 
 .about__container {
@@ -454,18 +472,21 @@ body {
         }
     }
 
-    @media screen and (max-width: 800px){
-
-        .pink {
-            background-color: $green;
+    @media screen and (max-width: 450px){
+        
+        .subtitle {
+            font-size: 100%;
         }
+    }
+
+    @media screen and (max-width: 800px){
 
         .title__container {
         
             left: 3rem;
         }
         
-        #photo, #box-two {
+        #photo, #box-two, #box-three {
             flex-basis: 100%;
             // font-size: 1em;
         }
@@ -481,5 +502,18 @@ body {
         .link {
             background-color: $white;
         }
-
     }
+
+    // @media screen and (min-width: 900px){
+
+    //     #photo, #box-two, #box-three {
+    //         flex-basis: 25%;
+    //     }
+
+    //     #box-three {
+    //         order: 2;
+    //     }
+
+
+    // }
+

@@ -21,35 +21,48 @@ body {
   display: none;
 }
 
-.navigation__button {
+.button {
   background-color: white;
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 4rem;
-  right: 4rem;
   border: black;
   border-style: solid;
   border-radius: 50%;
   z-index: 11;
   box-shadow: 0 5px 0 black;
 }
-.navigation__button:hover {
+.button:hover {
   transform: translateY(5px);
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0);
 }
-.navigation__button:active {
+.button:active {
   transform: translateY(2px);
   box-shadow: inset 0px 2px 0px black;
 }
 
-.navigation__background {
+#rectangle {
+  width: 4rem;
   height: 1rem;
-  width: 1rem;
+  border-radius: 0%;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  padding: 0;
+}
+
+#navigation {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 4rem;
+  right: 10%;
+}
+
+.navigation__background {
+  height: 1px;
+  width: 1px;
   border-radius: 0%;
   position: fixed;
-  top: 5rem;
-  right: 5rem;
+  top: 10%;
+  right: 15%;
   background-color: #fe5d25;
   z-index: 10;
   transition: transform 0s;
@@ -97,7 +110,7 @@ body {
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(200);
+  transform: scale(200000);
 }
 
 .navigation__checkbox:checked ~ .navigation__container {
@@ -105,7 +118,7 @@ body {
   visibility: visible;
 }
 
-.navigation__checkbox:checked ~ .navigation__button {
+.navigation__checkbox:checked ~ #navigation {
   transform: translateY(2px);
   box-shadow: inset 0px 2px 0px black;
 }
@@ -313,7 +326,7 @@ body {
 .title__container {
   position: absolute;
   top: 7rem;
-  left: 4rem;
+  left: 13%;
 }
 
 .about__container {
@@ -359,16 +372,17 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
-  .pink {
-    background-color: #2fd6af;
+@media screen and (max-width: 450px) {
+  .subtitle {
+    font-size: 100%;
   }
-
+}
+@media screen and (max-width: 800px) {
   .title__container {
     left: 3rem;
   }
 
-  #photo, #box-two {
+  #photo, #box-two, #box-three {
     flex-basis: 100%;
   }
 
