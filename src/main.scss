@@ -1,4 +1,3 @@
-// @import "nav-bar";
 @import url('https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap');
 
 $heading-font: "Raleway", sans-serif;
@@ -10,6 +9,8 @@ $yellow: rgba(255, 206, 0, 1);
 $orange: rgba(254, 93, 37, 1);
 $black: rgba(0,0,0,1);
 $white: rgba(255, 255, 255, 1);
+
+@import "navigation";
 
 * {
     margin: 0;
@@ -29,139 +30,16 @@ body {
     background-color: $green;
 }
 
-// ##################################################
-// NAVIGATION CHECKBOX & BUTTON, BACKGROUND ANIMATION
-// ON CHECKBOX TOGGLE, NAV MENU & MENU ITEM DISPLAY
-// ##################################################
 
-.navigation__checkbox {
-  display: none;
-}
-// button is the styling that the user can see as the menu icon 
-.button {
-    background-color: $white;
-    // width: 2rem;
-    // height: 2rem;
-    // position: fixed;
-    // top: 4rem;
-    // right: 4rem;
-    border: black;
-    border-style: solid;
-    border-radius: 50%;
-    z-index: 11;
-    box-shadow: 0 5px 0 $black;
 
-      &:hover {
-          transform: translateY(5px);
-          box-shadow: 0 5px 0 rgba(0,0,0,0);
-      }
-  
-      &:active {
-          transform: translateY(2px);
-          box-shadow: inset 0px 2px 0px $black;
-      }
-  }
-
-  #rectangle {
-    width: 4rem;
-    height: 1rem;
-    border-radius: 0%;
-    text-decoration: none;
-    font-family: $sub-heading-font;
-    text-align: center;
-    padding: 0;
-  }
-
-  #navigation {
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    top: 4rem;
-    right: 10%;
-    }
-
-// this is hidden behind the menu button and will expand to fill the screen when the menu button has been pressed
-  .navigation__background {
-    height: 1px;
-    width: 1px;
-    border-radius: 0%;
-    position: fixed;
-    top: 10%; //hides the background behind button
-    right: 15%; //hides the background behind button
-    background-color: $orange;
-    z-index: 10;
-    transition: transform 0s;
-}
-
-.navigation__container {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 10%;
-    z-index: 10;
-    transition: all .3s;
-  
-    // sets the menu to not display so it is only visible once the checkbox toggle has been selected by the user
-    display: none;
-    visibility: hidden;
-  }
-
-  .navigation__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-    width: 100%;
-  }
-
-  .navigation__item {
-    margin: 1rem;
-  }
-
-  .navigation__link {
-    &:link, &:visited {
-        display: inline-block;
-        font-size: 3rem;
-        color: $black;
-        text-decoration: none;
-        text-transform: lowercase;
-        padding: 0.5rem 2rem;
-        background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, $white 50%);
-        background-size: 220%;
-        transition: all 0.4s;
-    }
-    
-    &:hover, &:active {
-        background-position: 100%;
-        color: $black;
-      }
-  }
-
-// sibling selectors used to change specific elements once the checkbox (nav menu) has been selected by the user 
-  .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(200000);
-  }
-
-  .navigation__checkbox:checked ~ .navigation__container {
-    display: block; //will now display the menu on the screen
-    visibility: visible;
-  }
-  
-  .navigation__checkbox:checked ~ #navigation {
-      transform: translateY(2px); 
-      box-shadow: inset 0px 2px 0px $black; //makes the button look like it has been pushed
-  }
-
-.solid-bg {
-    width: 100vw;
-    // background-color: $green;
-    height: 6.5rem;
-    position: fixed;
-    z-index: 10;
-    // opacity: .9;
-}
+// .solid-bg {
+//     width: 100vw;
+//     // background-color: $green;
+//     height: 6.5rem;
+//     position: fixed;
+//     z-index: 10;
+//     // opacity: .9;
+// }
 
 .yellow-shadow {
     box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
@@ -405,10 +283,6 @@ body {
     .heading-primary {
         font-size: 16px;
     }
-
-    // .title__container {
-    //     display: none;
-    // }
 }
 
 
@@ -523,19 +397,6 @@ body {
         }
     }
 
-    // @media screen and (min-width: 900px){
-
-    //     #photo, #box-two, #box-three {
-    //         flex-basis: 25%;
-    //     }
-
-    //     #box-three {
-    //         order: 2;
-    //     }
-
-
-    // }
-
 // ##################################################
 // BLOG PAGE
 // ##################################################
@@ -619,74 +480,3 @@ body {
     }
 }
 
-// ##############################################
-// NAV BAR
-
-
-  header {
-    // width: 100%;
-    // height: 70px;
-    // background-color: red;
-  }
-  
-  .navbar__list {
-    display: flex;
-    list-style-type: none;
-    font-size: 20px;
-    justify-content: flex-end; 
-    margin: 0px; 
-  }
-  
-  
-  .navbar__item {
-    margin: 20px;
-  }
-  
-  #home {
-    margin-right: auto;
-
-  }
-  
-  .navbar__item {
-    .nav-bar__link {
-    color: black;
-    text-decoration: none; 
-      }
-    background-color: $white;
-    padding: 5px;
-    border: 3px solid $black;
-    transform: translateY(-5px);
-    box-shadow: 3px 3px 0 $black;
-  }
-
-  .navbar__item:hover {
-                transform: translateY(2px);
-                box-shadow: 0 5px 0 rgba(0,0,0,0);
-            } 
-  
-.navbar__item:active {
-    transform: translateY(2px);
-    box-shadow: inset 2px 2px 0 rgba(0,0,0,1);
-          }
-
-@media screen and (max-width: 560px){
-    .nav-bar {
-    visibility: hidden;
-    }
-
-    .navigation {
-        visibility: visible;
-    }
-}
-  
-@media screen and (min-width: 561px){
-    .nav-bar {
-    // display: flex;
-    visibility: visible;
-    }
-
-    .navigation {
-        // display: none;
-        visibility: hidden;
-    }
-}  
