@@ -398,5 +398,25 @@ body {
     background-color: white;
   }
 }
+.blog-box {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+}
+.blog-box a {
+  text-decoration: none;
+}
+.blog-box h4 {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  position: relative;
+  padding: 1em;
+  top: 4em;
+  background-color: white;
+}
+.blog-box img {
+  object-fit: contain;
+  width: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */
