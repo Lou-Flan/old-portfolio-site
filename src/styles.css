@@ -337,12 +337,12 @@ body {
 .title__container {
   position: absolute;
   top: 7rem;
-  left: 13%;
+  left: 10%;
 }
 
 .about__container {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;
   display: flex;
   flex-direction: row;
@@ -352,7 +352,7 @@ body {
 }
 
 .box {
-  padding: 3%;
+  padding-bottom: 3%;
   font-size: 100%;
 }
 .box img {
@@ -391,10 +391,15 @@ body {
   .subtitle {
     font-size: 100%;
   }
+
+  .about__container {
+    position: absolute;
+    top: 30%;
+  }
 }
 @media screen and (max-width: 800px) {
   .title__container {
-    left: 3rem;
+    left: 10%;
   }
 
   #photo, #box-two, #box-three {
@@ -414,9 +419,11 @@ body {
   }
 }
 .blog-box {
+  background-color: white;
   flex-basis: 45%;
   position: relative;
   margin: 10px;
+  border: 3px solid;
 }
 .blog-box a {
   text-decoration: none;
@@ -439,6 +446,11 @@ body {
   width: 100%;
   background-color: black;
 }
+.blog-box p {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
 
 @media screen and (max-width: 700px) {
   .blog-box {
@@ -446,9 +458,11 @@ body {
   }
   .blog-box h4 {
     display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     color: white;
+  }
+  .blog-box p {
+    font-size: 75%;
   }
 }
 @media screen and (min-width: 1200px) {
