@@ -475,5 +475,61 @@ body {
     align-self: flex-end;
   }
 }
+.navbar__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+.navbar__item {
+  margin: 20px;
+}
+
+#home {
+  margin-right: auto;
+}
+
+.navbar__item {
+  background-color: white;
+  padding: 5px;
+  border: 3px solid black;
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 0 black;
+}
+.navbar__item .nav-bar__link {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar__item:hover {
+  transform: translateY(2px);
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0);
+}
+
+.navbar__item:active {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 0 black;
+}
+
+@media screen and (max-width: 560px) {
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .navigation {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 561px) {
+  .nav-bar {
+    visibility: visible;
+  }
+
+  .navigation {
+    visibility: hidden;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
