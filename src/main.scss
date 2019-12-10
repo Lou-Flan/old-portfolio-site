@@ -159,9 +159,18 @@ body {
     height: 6.5rem;
     position: fixed;
     z-index: 10;
-    opacity: .9;
-    
+    // opacity: .9;
 }
+
+.yellow-shadow {
+    box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
+    }
+.pink-shadow {
+    box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
+        }
+.green-shadow {
+    box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
+    }
 
 // ##################################################
 // MAIN CONTENT OF HOME PAGE - 
@@ -473,6 +482,10 @@ body {
     }
 
     @media screen and (max-width: 450px){
+
+        h4 {
+            font-size: 80%;
+        }
         
         .subtitle {
             font-size: 100%;
@@ -530,7 +543,8 @@ body {
     
 
     a {
-        text-decoration: none;    
+        text-decoration: none; 
+        
     }
 
     h4 {
@@ -540,14 +554,23 @@ body {
         position: absolute;
         padding: 1em;
         top: 3em;
-        // left: 1em;
+        // opacity: 1;
         background-color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $black;
+            color: $white;
+        }
     }
 
     img {
         object-fit: cover;
         width: 100%;
+        background-color: $black;
+        // opacity: .8;
     }
+
 }
 
 
@@ -555,5 +578,24 @@ body {
         
     .blog-box {
         flex-basis: 100%;
+
+        h4 {
+            display: block;
+            width: 100%;
+            background-color: rgb(0, 0, 0, .8);
+            color: $white;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .about__container {
+        justify-content: flex-start;
+    }
+        
+    .blog-box {
+        flex-basis: 30%;
+        align-self: flex-end;
     }
 }
