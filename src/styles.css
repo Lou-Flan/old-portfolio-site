@@ -399,8 +399,9 @@ body {
   }
 }
 .blog-box {
-  flex-basis: 100%;
-  margin-bottom: 10px;
+  flex-basis: 45%;
+  position: relative;
+  margin: 10px;
 }
 .blog-box a {
   text-decoration: none;
@@ -409,14 +410,20 @@ body {
   display: inline-block;
   font-family: "Roboto Mono", monospace;
   color: black;
-  position: relative;
+  position: absolute;
   padding: 1em;
-  top: 4em;
+  top: 3em;
   background-color: white;
 }
 .blog-box img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .blog-box {
+    flex-basis: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

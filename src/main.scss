@@ -524,8 +524,10 @@ body {
 .blog-box {
 
     // background-color: red;
-    flex-basis: 100%;
-    margin-bottom: 10px;
+    flex-basis: 45%;
+    position: relative;
+    margin: 10px;
+    
 
     a {
         text-decoration: none;    
@@ -535,20 +537,23 @@ body {
         display: inline-block;
         font-family: $sub-heading-font;
         color: $black;
-        position: relative;
+        position: absolute;
         padding: 1em;
-        top: 4em;
+        top: 3em;
         // left: 1em;
         background-color: $white;
     }
 
     img {
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
     }
 }
 
-// .text-overlay {
-//     position: relative;
-//     top: 100px;
-// }
+
+@media screen and (max-width: 700px){
+        
+    .blog-box {
+        flex-basis: 100%;
+    }
+}
