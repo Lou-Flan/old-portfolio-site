@@ -175,15 +175,22 @@
   right: 0;
   bottom: 0;
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .footer__list {
+  display: flex;
   list-style-type: none;
   font-size: 10px;
-  flex: 1;
   margin: 0px;
 }
 
+@media screen and (max-width: 700px) {
+  .footer-nav {
+    justify-content: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
