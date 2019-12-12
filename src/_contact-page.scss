@@ -1,0 +1,93 @@
+.flexbox-container-about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 200px 10% 5% 10%;
+    justify-content: center;
+}
+
+.about-box {
+
+    background-color: $white;
+    border-radius: 50%;
+    flex-basis: 35%;
+    position: relative;
+    margin: 10px;
+    border: 3px solid;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+
+        &:hover {
+            filter: invert(100%); 
+        }
+            
+    }
+}
+
+#github {
+    
+    &:hover {
+        background-color: $pink;
+    }
+}
+
+#twitter {
+
+    &:hover {
+        background-color: $yellow;
+    }
+}
+
+#linkedin {
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+#email {
+
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .flexbox-container-about {
+        justify-content: center;
+        margin-top: 40%;
+    }
+        
+    .about-box {
+        flex-basis: 30%;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+
+    .flexbox-container-about {
+        justify-content: center;
+        margin-top: 70%;
+    }
+        
+    .about-box {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .flexbox-container-about {
+        justify-content: center;
+        margin-top: 20%;
+    }
+        
+    .about-box {
+        flex-basis: 20%;
+    }
+}

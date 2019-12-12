@@ -12,6 +12,7 @@ $white: rgba(255, 255, 255, 1);
 
 @import "navigation";
 @import "blog-page";
+@import "contact-page";
 
 * {
     margin: 0;
@@ -43,15 +44,15 @@ body {
 // //     // opacity: .9;
 // // }
 
-// .yellow-shadow {
-//     box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
-//     }
-// .pink-shadow {
-//     box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
-//         }
-// .green-shadow {
-//     box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
-//     }
+.yellow-shadow {
+    box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
+    }
+.pink-shadow {
+    box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
+        }
+.green-shadow {
+    box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
+    }
 
 // // ##################################################
 // // MAIN CONTENT OF HOME PAGE - 
