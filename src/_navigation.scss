@@ -1,3 +1,42 @@
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+// // .page-flex-container {
+// //   display: flex;
+// //   flex-direction: column;
+// //   width: 100vw;
+// //   height: 100%;
+
+
+// //     .header-flex-box {
+// //       // order: 1;
+// //       // height: 15vh;
+// //       background-color: hotpink;
+// //     }
+
+// //     .main-flex-box {
+// //       // height: 75vh;
+// //       min-height: 100%;
+// //       margin-bottom: -50px;
+// //       // order: 2;
+// //       background-color: green;
+// //       // flex-grow: 1;
+// //     }
+
+// //     .footer-flex-box {
+// //       // height: 10vh;
+// //       order: 3;
+// //       // flex-grow: 0;
+// //       background-color: red;
+// //       height: 50px;
+// //     }
+
+// // }
+
 // ##################################################
 // FULL WIDTH RESPONSIVE NAVIGATION BAR IN HEADER
 // ################################################## 
@@ -202,36 +241,36 @@
   }
 
 
-  // FOOTER 
+//   // FOOTER 
 
 
 
-  .footer-nav {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    // flex-direction: row;
+  // .footer-nav {
+  //   position: fixed;
+  //   right: 0;
+  //   bottom: 0;
+  //   display: flex;
+  //   // flex-direction: row;
    
-    width: 100%;
-    // background-color: red;
-    justify-content: flex-end;
-  }
+  //   width: 100%;
+  //   // background-color: red;
+  //   justify-content: flex-end;
+  // }
 
-  .footer__list {
-    display: flex;
-    // display: inline-block;
-    list-style-type: none;
-    font-size: 10px;
-    // flex-grow: 1;
-    // justify-content: center;
-    margin: 0px; 
+  // .footer__list {
+  //   display: flex;
+  //   // display: inline-block;
+  //   list-style-type: none;
+  //   font-size: 10px;
+  //   // flex-grow: 1;
+  //   // justify-content: center;
+  //   margin: 0px; 
 
-  }
+  // }
 
 
-  @media screen and (max-width: 700px){
-    .footer-nav {
-      justify-content: center;
-    }
-  }
+  // @media screen and (max-width: 700px){
+  //   .footer-nav {
+  //     justify-content: center;
+  //   }
+  // }

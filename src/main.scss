@@ -32,29 +32,29 @@ body {
 
 
 
-// .solid-bg {
-//     width: 100vw;
-//     // background-color: $green;
-//     height: 6.5rem;
-//     position: fixed;
-//     z-index: 10;
-//     // opacity: .9;
-// }
+// // .solid-bg {
+// //     width: 100vw;
+// //     // background-color: $green;
+// //     height: 6.5rem;
+// //     position: fixed;
+// //     z-index: 10;
+// //     // opacity: .9;
+// // }
 
-.yellow-shadow {
-    box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
-    }
-.pink-shadow {
-    box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
-        }
-.green-shadow {
-    box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
-    }
+// .yellow-shadow {
+//     box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
+//     }
+// .pink-shadow {
+//     box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
+//         }
+// .green-shadow {
+//     box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
+//     }
 
-// ##################################################
-// MAIN CONTENT OF HOME PAGE - 
-// BACKGROUNDS AND WELCOME HEADINGS
-// ##################################################
+// // ##################################################
+// // MAIN CONTENT OF HOME PAGE - 
+// // BACKGROUNDS AND WELCOME HEADINGS
+// // ##################################################
 .long-text {
     display: none;
 }
@@ -300,42 +300,43 @@ body {
     left: 10%;
 }
 
-.about__container {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // background-color: $yellow;
-    width: 80vw;
-    // justify-content: center;
-}
+// FIXME: this is what broke the footer!!!
+// .about__container {
+//     position: absolute;
+//     top: 25%;
+//     left: 10%;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     // background-color: $yellow;
+//     width: 80vw;
+//     // justify-content: center;
+// }
 
-    .box {
-        padding-bottom: 3%;
-        font-size: 100%;
-        // background-color: rgba(255, 0, 0,);
+    // .box {
+    //     padding-bottom: 3%;
+    //     font-size: 100%;
+    //     // background-color: rgba(255, 0, 0,);
         
         
-         img {
-            //  padding: 0;
-            visibility: visible;
-            object-fit: contain;
-            // height: 100%;
-            width: 100%;
-        }
-    }
+    //      img {
+    //         //  padding: 0;
+    //         visibility: visible;
+    //         object-fit: contain;
+    //         // height: 100%;
+    //         width: 100%;
+    //     }
+    // }
 
-    #box-one {
-        flex-basis: 100%;
-        font-size: 1.2rem;
-    }
+    // #box-one {
+    //     flex-basis: 100%;
+    //     font-size: 1.2rem;
+    // }
 
-    #photo, #box-two {
-        flex-basis: 44%;
-    }
+    // #photo, #box-two {
+    //     flex-basis: 44%;
+    // }
 
     
     
