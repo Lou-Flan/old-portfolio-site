@@ -178,6 +178,14 @@
   box-shadow: inset 0px 2px 0px black;
 }
 
+.footer__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 10px;
+  justify-content: center;
+  margin: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;

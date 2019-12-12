@@ -257,16 +257,16 @@
   //   justify-content: flex-end;
   // }
 
-  // .footer__list {
-  //   display: flex;
-  //   // display: inline-block;
-  //   list-style-type: none;
-  //   font-size: 10px;
-  //   // flex-grow: 1;
-  //   // justify-content: center;
-  //   margin: 0px; 
+  .footer__list {
+    display: flex;
+    // display: inline-block;
+    list-style-type: none;
+    font-size: 10px;
+    // flex-grow: 1;
+    justify-content: center;
+    margin: 0px; 
 
-  // }
+  }
 
 
   // @media screen and (max-width: 700px){
