@@ -1,4 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap");
+.long-text {
+  display: none;
+}
+
+.medium-text {
+  display: none;
+}
+
+.short-text {
+  display: none;
+}
+
+.heading-container {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: lowercase;
+}
+.heading-primary .main {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 11rem;
+  animation: moveInLeft 1s ease-out;
+}
+.heading-primary .sub {
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+
+.further-sub {
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  background-color: black;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+.strike {
+  text-decoration: line-through;
+  animation: slide-in-left 2s ease-out;
+}
+
+.title__container {
+  position: absolute;
+  top: 7rem;
+  left: 10%;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 200%;
+  animation: moveInLeft 1s ease-out;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 100%;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -322,7 +390,7 @@
     font-size: 70%;
   }
 }
-.flexbox-container-about {
+.flexbox-container-contact {
   display: flex;
   flex-wrap: wrap;
   width: 80vw;
@@ -330,7 +398,7 @@
   justify-content: center;
 }
 
-.about-box {
+.contact-box {
   background-color: white;
   border-radius: 50%;
   flex-basis: 35%;
@@ -338,12 +406,12 @@
   margin: 10px;
   border: 3px solid;
 }
-.about-box img {
+.contact-box img {
   object-fit: cover;
   width: 100%;
   height: auto;
 }
-.about-box img:hover {
+.contact-box img:hover {
   filter: invert(100%);
 }
 
@@ -364,23 +432,68 @@
 }
 
 @media screen and (max-width: 700px) {
+  .flexbox-container-contact {
+    justify-content: center;
+    margin-top: 40%;
+  }
+
+  .contact-box {
+    flex-basis: 30%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .flexbox-container-contact {
+    justify-content: center;
+    margin-top: 70%;
+  }
+
+  .contact-box {
+    flex-basis: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flexbox-container-contact {
+    justify-content: center;
+    margin-top: 20%;
+  }
+
+  .contact-box {
+    flex-basis: 20%;
+  }
+}
+.flexbox-container-about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 200px 10% 5% 10%;
+  justify-content: center;
+}
+
+.about-box {
+  flex-basis: 50%;
+  position: relative;
+  margin: 10px;
+}
+
+#photo {
+  background-image: url(./images/profile-pic-01.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 30vh;
+}
+#photo:hover {
+  background-image: url(./images/louise-pic-01.jpg);
+}
+
+@media screen and (max-width: 450px) {
   .flexbox-container-about {
     justify-content: center;
     margin-top: 40%;
   }
 
   .about-box {
-    flex-basis: 30%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .flexbox-container-about {
-    justify-content: center;
-    margin-top: 70%;
-  }
-
-  .about-box {
-    flex-basis: 30%;
+    flex-basis: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -422,62 +535,6 @@ body {
 
 .green-shadow {
   box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
-}
-
-.long-text {
-  display: none;
-}
-
-.medium-text {
-  display: none;
-}
-
-.short-text {
-  display: none;
-}
-
-.heading-container {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-.heading-primary {
-  color: white;
-  text-transform: lowercase;
-}
-.heading-primary .main {
-  font-family: "Raleway", sans-serif;
-  display: block;
-  font-size: 11rem;
-  animation: moveInLeft 1s ease-out;
-}
-.heading-primary .title {
-  font-family: "Raleway", sans-serif;
-  display: block;
-  font-size: 200%;
-  animation: moveInLeft 1s ease-out;
-}
-.heading-primary .subtitle {
-  font-family: "Raleway", sans-serif;
-  display: block;
-  font-size: 175%;
-  animation: moveInLeft 1s ease-out;
-}
-.heading-primary .sub {
-  display: block;
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-}
-
-.further-sub {
-  display: block;
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  background-color: black;
-  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
 @keyframes slide-in-left {
@@ -611,15 +668,6 @@ body {
   .heading-primary {
     font-size: 16px;
   }
-}
-.strike {
-  text-decoration: line-through;
-}
-
-.title__container {
-  position: absolute;
-  top: 7rem;
-  left: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */

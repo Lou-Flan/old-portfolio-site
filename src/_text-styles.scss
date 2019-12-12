@@ -1,0 +1,100 @@
+
+// TEXT STYLING USED THROUGHOUT SITE //
+
+// ##################################################
+// STYLING FOR RESPONSIVE HEADINGS
+// ALL SET VISSIBLE BASED ON SCREEN SIZE 
+// ##################################################
+
+.long-text {
+    display: none;
+}
+.medium-text {
+    display: none;
+}
+.short-text {
+    display: none;
+}
+
+// ##################################################
+// CONTAINER USED FOR HEADINGS ON HOME PAGE
+// ##################################################
+
+.heading-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.heading-primary {
+    color: $white;
+    text-transform: lowercase;
+
+    .main {
+        font-family: $heading-font;
+        display: block;
+        font-size: 11rem;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    // .title {
+    //     font-family: $heading-font;
+    //     display: block;
+    //     font-size: 200%;
+    //     animation: moveInLeft 1s ease-out;
+    //     // background-color: $black;
+    // }
+
+    // .subtitle {
+    //     font-family: $heading-font;
+    //     display: block;
+    //     font-size: 175%;
+    //     animation: moveInLeft 1s ease-out;
+    // }
+
+    .sub {
+        display: block;
+        font-size: 1em;
+        font-family: $sub-heading-font;
+    }
+}
+    .further-sub {
+        display: block;
+        font-size: 1em;
+        font-family: $sub-heading-font;
+        background-color: $black;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+
+    
+    .strike {
+        text-decoration: line-through;
+        animation: slide-in-left 2s ease-out;
+    }
+
+// ##################################################
+// CONTAINER USED FOR TITLES ON PAGES OTHER THAN HOME
+// ##################################################
+
+.title__container {
+    position: absolute;
+    top: 7rem;
+    left: 10%;
+}
+
+.title {
+    font-family: $heading-font;
+    display: block;
+    font-size: 200%;
+    animation: moveInLeft 1s ease-out;
+    // background-color: $black;
+}
+
+.subtitle {
+    font-family: $heading-font;
+    display: block;
+    font-size: 100%;
+    // animation: slide-in-left 2s ease-out;
+}

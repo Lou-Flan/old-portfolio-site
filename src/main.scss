@@ -10,9 +10,11 @@ $orange: rgba(254, 93, 37, 1);
 $black: rgba(0,0,0,1);
 $white: rgba(255, 255, 255, 1);
 
+@import "text-styles";
 @import "navigation";
 @import "blog-page";
 @import "contact-page";
+@import "about-page";
 
 * {
     margin: 0;
@@ -58,65 +60,6 @@ body {
 // // MAIN CONTENT OF HOME PAGE - 
 // // BACKGROUNDS AND WELCOME HEADINGS
 // // ##################################################
-.long-text {
-    display: none;
-}
-.medium-text {
-    display: none;
-}
-.short-text {
-    display: none;
-}
-
-.heading-container {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-}
-
-.heading-primary {
-    color: $white;
-    text-transform: lowercase;
-
-    .main {
-        font-family: $heading-font;
-        display: block;
-        font-size: 11rem;
-        animation: moveInLeft 1s ease-out;
-    }
-
-    .title {
-        font-family: $heading-font;
-        display: block;
-        font-size: 200%;
-        animation: moveInLeft 1s ease-out;
-        // background-color: $black;
-    }
-
-    .subtitle {
-        font-family: $heading-font;
-        display: block;
-        font-size: 175%;
-        animation: moveInLeft 1s ease-out;
-    }
-
-    .sub {
-        display: block;
-        font-size: 1em;
-        font-family: $sub-heading-font;
-    }
-}
-    .further-sub {
-        display: block;
-        font-size: 1em;
-        font-family: $sub-heading-font;
-        background-color: $black;
-        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-    }
-
-    
 
 // ##################################################
 // TITLE ANIMATIONS
@@ -293,15 +236,9 @@ body {
 // ##################################################
 // ABOUT PAGE
 // ##################################################
-.strike {
-    text-decoration: line-through;
-}
 
-.title__container {
-    position: absolute;
-    top: 7rem;
-    left: 10%;
-}
+
+
 
 // FIXME: this is what broke the footer!!!
 // .about__container {
