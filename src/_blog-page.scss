@@ -1,0 +1,176 @@
+// ##################################################
+// BLOG PAGE
+// ##################################################
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 200px 10% 5% 10%;
+    justify-content: center;
+}
+
+    .box {
+        padding-bottom: 3%;
+        font-size: 100%;
+        // background-color: rgba(255, 0, 0,);
+        
+        
+         img {
+            //  padding: 0;
+            // visibility: visible;
+            object-fit: contain;
+            // height: 100%;
+            width: 100%;
+        }
+    }
+
+    #box-one {
+        flex-basis: 100%;
+        font-size: 1.2rem;
+    }
+
+    #photo, #box-two {
+        flex-basis: 44%;
+    }
+
+    
+    
+
+    .link {
+        
+        text-decoration: none;
+        color: $black;
+        font-weight: 1000;
+        background-image: linear-gradient(to top,$white 35%,transparent 35%);
+
+        &:hover {
+            background-color: $white;
+        }
+
+        &::visited {
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+
+        h4 {
+            font-size: 80%;
+        }
+        
+        .subtitle {
+            font-size: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 800px){
+
+        .title__container {
+        
+            left: 10%;
+        }
+        
+        #photo, #box-two, #box-three {
+            flex-basis: 100%;
+            // font-size: 1em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .heading-primary .subtitle {
+            font-size: 150%;
+        }
+
+        .link {
+            background-color: $white;
+        }
+    }
+
+
+
+.blog-box {
+
+    background-color: $white;
+    flex-basis: 45%;
+    position: relative;
+    margin: 10px;
+    border: 3px solid;
+    
+
+    a {
+        text-decoration: none;   
+    }
+
+    h4 {
+        display: inline-block;
+        font-family: $sub-heading-font;
+        color: $black;
+        position: absolute;
+        padding: 1em;
+        top: 3em;
+        // opacity: 1;
+        background-color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        background-color: $black;
+        // opacity: .8;
+    }
+
+    p {
+        text-decoration: none;
+        color: $black;
+        background-color: $white;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+        
+    .blog-box {
+        flex-basis: 100%;
+
+        h4 {
+            display: block;
+            // width: 100%;
+            background-color: rgb(0, 0, 0, 1);
+            color: $white;
+        }
+
+        p {
+
+            font-size: 75%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .flexbox-container {
+        justify-content: flex-start;
+        margin-bottom: -30px;
+    }
+        
+    .blog-box {
+        flex-basis: 30%;
+        height: 35vh;
+        align-self: flex-end;
+
+        p {
+            font-size: 70%;
+        }
+    }
+}

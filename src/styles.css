@@ -186,6 +186,142 @@
   margin: 0px;
 }
 
+@media screen and (min-width: 700px) {
+  .footer__list {
+    justify-content: flex-end;
+  }
+}
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 200px 10% 5% 10%;
+  justify-content: center;
+}
+
+.box {
+  padding-bottom: 3%;
+  font-size: 100%;
+}
+.box img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#box-one {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+}
+
+#photo, #box-two {
+  flex-basis: 44%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to top, white 35%, transparent 35%);
+}
+.link:hover {
+  background-color: white;
+}
+.link::visited {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  h4 {
+    font-size: 80%;
+  }
+
+  .subtitle {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title__container {
+    left: 10%;
+  }
+
+  #photo, #box-two, #box-three {
+    flex-basis: 100%;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .heading-primary .subtitle {
+    font-size: 150%;
+  }
+
+  .link {
+    background-color: white;
+  }
+}
+.blog-box {
+  background-color: white;
+  flex-basis: 45%;
+  position: relative;
+  margin: 10px;
+  border: 3px solid;
+}
+.blog-box a {
+  text-decoration: none;
+}
+.blog-box h4 {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  position: absolute;
+  padding: 1em;
+  top: 3em;
+  background-color: white;
+}
+.blog-box h4:hover, .blog-box h4:active {
+  background-color: black;
+  color: white;
+}
+.blog-box img {
+  object-fit: cover;
+  width: 100%;
+  background-color: black;
+}
+.blog-box p {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .blog-box {
+    flex-basis: 100%;
+  }
+  .blog-box h4 {
+    display: block;
+    background-color: black;
+    color: white;
+  }
+  .blog-box p {
+    font-size: 75%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flexbox-container {
+    justify-content: flex-start;
+    margin-bottom: -30px;
+  }
+
+  .blog-box {
+    flex-basis: 30%;
+    height: 35vh;
+    align-self: flex-end;
+  }
+  .blog-box p {
+    font-size: 70%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -202,6 +338,7 @@ p {
 
 body {
   background-color: #2fd6af;
+  width: 100vw;
 }
 
 .long-text {
@@ -400,112 +537,6 @@ body {
   position: absolute;
   top: 7rem;
   left: 10%;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-  font-weight: 1000;
-  background-image: linear-gradient(to top, white 35%, transparent 35%);
-}
-.link:hover {
-  background-color: white;
-}
-.link::visited {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 450px) {
-  h4 {
-    font-size: 80%;
-  }
-
-  .subtitle {
-    font-size: 100%;
-  }
-
-  .about__container {
-    position: absolute;
-    top: 30%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .title__container {
-    left: 10%;
-  }
-
-  #photo, #box-two, #box-three {
-    flex-basis: 100%;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  .heading-primary .subtitle {
-    font-size: 150%;
-  }
-
-  .link {
-    background-color: white;
-  }
-}
-.blog-box {
-  background-color: white;
-  flex-basis: 45%;
-  position: relative;
-  margin: 10px;
-  border: 3px solid;
-}
-.blog-box a {
-  text-decoration: none;
-}
-.blog-box h4 {
-  display: inline-block;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-  position: absolute;
-  padding: 1em;
-  top: 3em;
-  background-color: white;
-}
-.blog-box h4:hover, .blog-box h4:active {
-  background-color: black;
-  color: white;
-}
-.blog-box img {
-  object-fit: cover;
-  width: 100%;
-  background-color: black;
-}
-.blog-box p {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-}
-
-@media screen and (max-width: 700px) {
-  .blog-box {
-    flex-basis: 100%;
-  }
-  .blog-box h4 {
-    display: block;
-    background-color: black;
-    color: white;
-  }
-  .blog-box p {
-    font-size: 75%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about__container {
-    justify-content: flex-start;
-  }
-
-  .blog-box {
-    flex-basis: 30%;
-    align-self: flex-end;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

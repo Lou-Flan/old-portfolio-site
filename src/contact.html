@@ -9,8 +9,9 @@
     <title>about louise</title>
 </head>
 
-<body class="page-flex-container">
-<section class="header-flex-box">
+<!-- <body class="page-flex-container"> -->
+<body>
+<!-- <section class="header-flex-box"> -->
     <header class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -32,17 +33,17 @@
             <ul class="navbar__list">
                 <li class="navbar__item" id="home"><a class="nav-bar__link" href="../index.html">home</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="./about.html">about</a></li>
-                <li class="navbar__item"><a class="nav-bar__link" href="#">blog</a></li>
+                <li class="navbar__item"><a class="nav-bar__link" href="./blog.html">blog</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="#">projects</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="#">contact</a></li>
             </ul>
         </nav>
 
-        </div>
-    </section>
+        <!-- </div> -->
+    <!-- </section> -->
     </header>
     <main class="content">
-        <section class="main-flex-box">
+        <!-- <section class="main-flex-box"> -->
 
         <div class="title__container">
             <h1 class="heading-primary">
@@ -52,7 +53,7 @@
             </h1>
         </div>
 
-        <section class="about__container">
+        <section class="flexbox-container">
                 <article class="blog-box" id="blog-one">
                     <a href="#">
                         <h4>a sample blog | dec 1 '19</h4>
@@ -77,19 +78,27 @@
                         </p>
                     </a>
                 </article>
-            </section>
+                <article class="blog-box" id="blog-three">
+                        <a href="#">
+                            <h4>a sample blog | oct 1 '19</h4>
+                            <img src="./images/blog3.jpg" alt="animal crackers">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium, sapiente mollitia.
+                            </p>
+                        </a>
+                    </article>
+            <!-- </section> -->
             <!-- <div class="push"></div> -->
     </main>
     <footer class="footer">
         <section class="footer-nav">
-            <nav >
-                <ul>
-                    <li class="footer__list"><a class="" href="https://github.com/Lou-Flan">github</a></li>
-                    <li class="footer__list"><a class="" href="https://twitter.com/FlangerHanger">twitter</a>
+            <nav>
+                <ul class="footer__list">
+                    <li class="navbar__item"><a class="nav-bar__link" href="https://github.com/Lou-Flan">github</a></li>
+                    <li class="navbar__item"><a class="nav-bar__link" href="https://twitter.com/FlangerHanger">twitter</a>
                     </li>
-                    <li class="footer__list"><a class=""
+                    <li class="navbar__item"><a class="nav-bar__link"
                             href="https://www.linkedin.com/in/louise-flanagan/">linkedin</a></li>
-                    <li class="footer__list"><a class="" href="#">resume</a></li>
+                    <li class="navbar__item"><a class="nav-bar__link" href="#">resume</a></li>
                 </ul>
             </nav>
         </section>

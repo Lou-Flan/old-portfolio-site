@@ -269,8 +269,8 @@
   }
 
 
-  // @media screen and (max-width: 700px){
-  //   .footer-nav {
-  //     justify-content: center;
-  //   }
-  // }
+  @media screen and (min-width: 700px){
+    .footer__list {
+      justify-content: flex-end;
+    }
+  }
