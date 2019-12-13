@@ -1,0 +1,83 @@
+.flexbox-container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 200px auto auto auto;
+    justify-content: flex-start;
+    // background-color: black;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        border: 3px solid $black;
+    }
+
+    p {
+        font-size: 100%;
+    }
+}
+
+.project-box {
+    flex-basis: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    // background-color: white;
+
+    h4 {
+        display: inline-block;
+        color: $white;
+        position: absolute;
+        padding: 1em;
+        top: 3em;
+        z-index: 3;
+    }
+
+    h5 {
+        display: inline-block;
+        color: $white;
+        position: absolute;
+        padding: 1em;
+        top: 7em;
+        z-index: 3;
+        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+    
+}
+
+
+// #photo {
+//     background-image: url(./images/profile-pic-01.jpg);
+//     background-size: cover;
+//     background-position: top;
+//     width: 100%;
+//     height: 30vh;
+
+//     &:hover {
+//         background-image: url(./images/louise-pic-01.jpg);
+//     }
+// }
+
+// @media screen and (min-width: 450px){
+
+//     .flexbox-container-projects {
+//         justify-content: center;
+//         margin-top: 40%;
+//     }
+        
+//     .project-box {
+//         flex-basis: 50%;
+//     }
+// }
+
+// @media screen and (min-width: 1200px){
+
+//     .flexbox-container-projects {
+//         justify-content: center;
+//         margin-top: 20%;
+//     }
+        
+//     .project-box {
+//         flex-basis: 20%;
+//     }
+// }

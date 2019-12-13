@@ -506,6 +506,46 @@
     flex-basis: 20%;
   }
 }
+.flexbox-container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 200px auto auto auto;
+  justify-content: flex-start;
+}
+.flexbox-container-projects img {
+  object-fit: cover;
+  width: 100%;
+  border: 3px solid black;
+}
+.flexbox-container-projects p {
+  font-size: 100%;
+}
+
+.project-box {
+  flex-basis: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.project-box h4 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  padding: 1em;
+  top: 3em;
+  z-index: 3;
+}
+.project-box h5 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  padding: 1em;
+  top: 7em;
+  z-index: 3;
+  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
 * {
   margin: 0;
   padding: 0;
