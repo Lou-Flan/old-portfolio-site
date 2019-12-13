@@ -22,6 +22,7 @@
             object-fit: contain;
             // height: 100%;
             width: 100%;
+            
         }
     }
 
@@ -112,6 +113,7 @@
         position: absolute;
         padding: 1em;
         top: 3em;
+        z-index: 3;
         // opacity: 1;
         background-color: $white;
 
@@ -125,8 +127,13 @@
     img {
         object-fit: cover;
         width: 100%;
-        background-color: $black;
+        filter: grayscale(100%);
+        // background-color: $black;
         // opacity: .8;
+        &:hover {
+            filter: grayscale(0%);
+        }
+
     }
 
     p {
