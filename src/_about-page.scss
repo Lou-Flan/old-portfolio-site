@@ -10,8 +10,18 @@
 .about-box {
     flex-basis: 50%;
     position: relative;
-    margin: 10px;
+    margin: 10px;   
 }
+
+.preference-box {
+    flex-basis: 20%;
+    position: relative;
+    margin: 10px;   
+}
+
+// #preferences {
+//     width: 100%;
+// }
 
 #photo {
     background-image: url(./images/profile-pic-01.jpg);
@@ -24,6 +34,67 @@
         background-image: url(./images/louise-pic-01.jpg);
     }
 }
+
+.preference {
+    flex-basis: 30%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    // align-content: space-between;
+    // background-color: $black;
+
+    img {
+        // display: block;
+        object-fit: cover;
+        border: 3px solid $black;
+        border-radius: 50%;
+        width: 10%;
+        background-color: $white;
+    }
+}
+
+.line {
+    width: 90%;
+    background-image: linear-gradient(to top,transparent 50%, $black 50%, $black 55%, transparent 55%);
+    position: relative;
+
+    .counter {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $pink;
+        z-index: 10;
+        position: absolute;
+        top: 38%;
+    }
+
+    #counter1 {
+        // position: absolute;
+        left: 25%;
+        // top: 38%;
+    }
+
+    #counter2 {
+        // position: absolute;
+        left: 65%;
+        // top: 40%;
+    }
+    
+    #counter4 {
+        // position: absolute;
+        left: 50%;
+        // top: 40%;
+    }
+
+    #counter3 {
+        // position: absolute;
+        left: 75%;
+        // top: 40%;
+    }
+}
+
 
 // @media screen and (max-width: 700px){
 
@@ -46,6 +117,10 @@
     }
         
     .about-box {
+        flex-basis: 100%;
+    }
+
+    .preference {
         flex-basis: 100%;
     }
 }
