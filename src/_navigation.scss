@@ -5,38 +5,6 @@
   flex-shrink: 0;
 }
 
-// // .page-flex-container {
-// //   display: flex;
-// //   flex-direction: column;
-// //   width: 100vw;
-// //   height: 100%;
-
-
-// //     .header-flex-box {
-// //       // order: 1;
-// //       // height: 15vh;
-// //       background-color: hotpink;
-// //     }
-
-// //     .main-flex-box {
-// //       // height: 75vh;
-// //       min-height: 100%;
-// //       margin-bottom: -50px;
-// //       // order: 2;
-// //       background-color: green;
-// //       // flex-grow: 1;
-// //     }
-
-// //     .footer-flex-box {
-// //       // height: 10vh;
-// //       order: 3;
-// //       // flex-grow: 0;
-// //       background-color: red;
-// //       height: 50px;
-// //     }
-
-// // }
-
 // ##################################################
 // FULL WIDTH RESPONSIVE NAVIGATION BAR IN HEADER
 // ################################################## 
@@ -136,7 +104,7 @@
     border-radius: 50%;
     z-index: 11;
     box-shadow: 0 5px 0 $black;
-
+      
       &:hover {
           transform: translateY(5px);
           box-shadow: 0 5px 0 rgba(0,0,0,0);
@@ -147,6 +115,10 @@
           box-shadow: inset 0px 2px 0px $black;
       }
   }
+
+  .move{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    }
 
   #rectangle {
     width: 4rem;
@@ -241,21 +213,32 @@
   }
 
 
+@keyframes heartbeat {
+  from {
+            transform: scale(1);
+            transform-origin: center center;
+            animation-timing-function: ease-out;
+  }
+  10% {
+            transform: scale(0.91);
+            animation-timing-function: ease-in;
+  }
+  17% {
+            transform: scale(0.98);
+            animation-timing-function: ease-out;
+  }
+  33% {
+            transform: scale(0.87);
+            animation-timing-function: ease-in;
+  }
+  45% {
+            transform: scale(1);
+            animation-timing-function: ease-out;
+  }
+}
+
+
 //   // FOOTER 
-
-
-
-  // .footer-nav {
-  //   position: fixed;
-  //   right: 0;
-  //   bottom: 0;
-  //   display: flex;
-  //   // flex-direction: row;
-   
-  //   width: 100%;
-  //   // background-color: red;
-  //   justify-content: flex-end;
-  // }
 
   .footer__list {
     display: flex;

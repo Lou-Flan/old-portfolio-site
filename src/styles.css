@@ -45,7 +45,6 @@
 
 .strike {
   text-decoration: line-through;
-  animation: slide-in-left 2s ease-out;
 }
 
 .title__container {
@@ -161,6 +160,10 @@
   box-shadow: inset 0px 2px 0px black;
 }
 
+.move {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 #rectangle {
   width: 4rem;
   height: 1rem;
@@ -246,6 +249,29 @@
   box-shadow: inset 0px 2px 0px black;
 }
 
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 .footer__list {
   display: flex;
   list-style-type: none;
@@ -472,16 +498,20 @@
   margin: 200px 10% 5% 10%;
   justify-content: space-between;
 }
+.flexbox-container-about p {
+  font-size: 1.3em;
+}
 
 .about-box {
   flex-basis: 30%;
   width: 100%;
-  margin: 10px;
+  margin: 1em;
 }
 
 .preference-box {
   position: relative;
-  padding: 0;
+  margin: 15px;
+  padding: 15px;
 }
 
 #photo {
@@ -490,6 +520,7 @@
   background-position: bottom;
   width: 100%;
   height: 30vh;
+  border: 3px black solid;
 }
 #photo:hover {
   background-image: url(./images/louise-pic-01.jpg);
@@ -500,7 +531,6 @@
   align-items: center;
   width: 30vw;
   height: auto;
-  margin: -10px 0;
 }
 .preference img {
   width: 10%;
@@ -537,28 +567,45 @@
   left: 75%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
   .flexbox-container-about {
     justify-content: center;
-    margin-top: 40%;
   }
 
   .about-box {
     flex-basis: 100%;
+  }
+  .about-box p {
+    font-size: 1em;
   }
 
   .preference {
     width: 85vw;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .flexbox-container-about {
     justify-content: flex-start;
-    margin-top: 10%;
   }
 
   .about-box {
-    flex-basis: 20%;
+    margin: 1.5em;
+  }
+
+  #box-two {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  #photo {
+    order: 2;
+    flex-basis: 40%;
+  }
+
+  .preference-box {
+    order: 3;
+    flex-basis: 40%;
+    margin: 0;
   }
 
   .preference {
