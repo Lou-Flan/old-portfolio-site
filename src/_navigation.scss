@@ -94,11 +94,6 @@
 // button is the styling that the user can see as the menu icon 
 .button {
     background-color: $white;
-    // width: 2rem;
-    // height: 2rem;
-    // position: fixed;
-    // top: 4rem;
-    // right: 4rem;
     border: black;
     border-style: solid;
     border-radius: 50%;
@@ -242,10 +237,8 @@
 
   .footer__list {
     display: flex;
-    // display: inline-block;
     list-style-type: none;
     font-size: 10px;
-    // flex-grow: 1;
     justify-content: center;
     margin: 0px; 
 

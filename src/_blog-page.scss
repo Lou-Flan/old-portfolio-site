@@ -114,7 +114,6 @@
         padding: 1em;
         top: 3em;
         z-index: 3;
-        // opacity: 1;
         background-color: $white;
 
         &:hover,
@@ -128,12 +127,10 @@
         object-fit: cover;
         width: 100%;
         filter: grayscale(100%);
-        // background-color: $black;
-        // opacity: .8;
+
         &:hover {
             filter: grayscale(0%);
         }
-
     }
 
     p {

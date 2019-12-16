@@ -4,7 +4,6 @@
     width: 80vw;
     margin: 200px auto auto auto;
     justify-content: flex-start;
-    // background-color: black;
 
     img {
         object-fit: cover;
@@ -69,7 +68,6 @@
 
 .project-title {
     color: $white;
-    // font-family: $heading-font;
     display: none;
 }
 
@@ -139,7 +137,7 @@
 
         a {
             background-color: $yellow;
-            
+
         }
     }
 }
