@@ -39,16 +39,6 @@ body {
 }
 
 
-
-// // .solid-bg {
-// //     width: 100vw;
-// //     // background-color: $green;
-// //     height: 6.5rem;
-// //     position: fixed;
-// //     z-index: 10;
-// //     // opacity: .9;
-// // }
-
 .yellow-shadow {
     box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
     }
@@ -59,10 +49,6 @@ body {
     box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
     }
 
-// // ##################################################
-// // MAIN CONTENT OF HOME PAGE - 
-// // BACKGROUNDS AND WELCOME HEADINGS
-// // ##################################################
 
 // ##################################################
 // TITLE ANIMATIONS
@@ -137,14 +123,14 @@ body {
 #middle {
     position: absolute;
     bottom: 4rem;
-    left: 6rem;
+    left: 7rem;
     display: inline-block;
 }
 
 #right {
     position: absolute;
     bottom: 4rem;
-    left: 8rem;
+    left: 10rem;
     display: inline-block;
 }
 
@@ -172,6 +158,10 @@ body {
 
 .green {
     background-color: $green;
+}
+
+.white {
+    background-color: $white;
 }
 
 
