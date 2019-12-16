@@ -144,6 +144,14 @@
 
 }
 
+.flexbox-container-blogpost {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 200px 10% 5% 10%;
+    justify-content: flex-start;
+}
+
 #blog-text {
     padding: 15px;
 
@@ -181,7 +189,7 @@
 }
 
 #blog-info {
-    flex-basis: 45%;
+    flex-basis: 100%;
     padding: 1em;
     text-decoration: underline;
 
@@ -238,6 +246,9 @@
 
     #blog-info {
 
+        text-decoration: none;
+
+        flex-basis: 40%;
         padding: 2em;
 
         #blog-title {
