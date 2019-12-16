@@ -47,6 +47,7 @@
         width: 10%;
         height: auto;
         background-color: $white;
+        border-radius: 50%;
     }
 }
 
@@ -85,7 +86,7 @@
 }
 
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 1024px){
 
     .flexbox-container-about {
         justify-content: center;
@@ -105,7 +106,7 @@
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1025px){
 
     .flexbox-container-about {
         justify-content: flex-start;
