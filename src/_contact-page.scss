@@ -1,10 +1,14 @@
 .flexbox-container-contact {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 80vw;
-    margin: 40% 10% 5% 10%;
+    // margin: 50% 10% 5% 10%;
     justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
 }
+
 
 .contact-box {
 
@@ -68,12 +72,15 @@
 // }
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 700px){
 
-    .flexbox-container-contact {
-        justify-content: center;
-        margin-top: 100%;
-    }
+    // .flexbox-container-contact {
+    //     justify-content: center;
+    //     margin-top: 100%;
+    // }
+    #contact-sub {
+    font-size: .5em;
+}
         
     .contact-box {
         flex-basis: 10%;
@@ -84,14 +91,16 @@
     }
 }
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 701px){
 
-    .flexbox-container-contact {
-        justify-content: center;
-        margin-top: 20%;
-    }
+    // .flexbox-container-contact {
+    //     justify-content: center;
+    //     margin-top: 30%;
+    // }
         
     .contact-box {
         flex-basis: 20%;
+
+    
     }
 }
