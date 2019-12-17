@@ -1,8 +1,10 @@
+// ##################################################
+// CONTACT PAGE
+// ##################################################
+
 .flexbox-container-contact {
     display: flex;
-    // flex-wrap: wrap;
     width: 80vw;
-    // margin: 50% 10% 5% 10%;
     justify-content: center;
     position: absolute;
     top: 40%;
@@ -59,25 +61,10 @@
     }
 }
 
-// @media screen and (max-width: 1024px){
-
-//     .flexbox-container-contact {
-//         justify-content: center;
-//         margin-top: 50%;
-//     }
-        
-//     .contact-box {
-//         flex-basis: 30%;
-//     }
-// }
 
 
 @media screen and (max-width: 700px){
 
-    // .flexbox-container-contact {
-    //     justify-content: center;
-    //     margin-top: 100%;
-    // }
     #contact-sub {
     font-size: .5em;
 }
@@ -93,10 +80,6 @@
 
 @media screen and (min-width: 701px){
 
-    // .flexbox-container-contact {
-    //     justify-content: center;
-    //     margin-top: 30%;
-    // }
         
     .contact-box {
         flex-basis: 20%;
