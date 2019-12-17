@@ -20,7 +20,7 @@
 }
 
 .heading-primary {
-  color: white;
+  color: #fdfdfd;
   text-transform: lowercase;
 }
 .heading-primary .main {
@@ -39,7 +39,7 @@
   display: block;
   font-size: 1em;
   font-family: "Roboto Mono", monospace;
-  background-color: black;
+  background-color: #1d4469;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
@@ -96,11 +96,11 @@
 }
 
 .navbar__item {
-  background-color: white;
+  background-color: #fdfdfd;
   padding: 5px;
-  border: 3px solid black;
+  border: 3px solid #1d4469;
   transform: translateY(-5px);
-  box-shadow: 3px 3px 0 black;
+  box-shadow: 3px 3px 0 #1d4469;
 }
 .navbar__item .nav-bar__link {
   color: black;
@@ -140,12 +140,12 @@
 }
 
 .button {
-  background-color: white;
+  background-color: #fdfdfd;
   border: black;
   border-style: solid;
   border-radius: 50%;
   z-index: 11;
-  box-shadow: 0 5px 0 black;
+  box-shadow: 0 5px 0 #1d4469;
 }
 .button:hover {
   transform: translateY(5px);
@@ -153,7 +153,7 @@
 }
 .button:active {
   transform: translateY(2px);
-  box-shadow: inset 0px 2px 0px black;
+  box-shadow: inset 0px 2px 0px #1d4469;
 }
 
 .move {
@@ -185,7 +185,7 @@
   position: fixed;
   top: 10%;
   right: 15%;
-  background-color: #fe5d25;
+  background-color: #e4c53c;
   z-index: 10;
   transition: transform 0s;
 }
@@ -218,17 +218,17 @@
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
-  color: black;
+  color: #1d4469;
   text-decoration: none;
   text-transform: lowercase;
   padding: 0.5rem 2rem;
-  background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, white 50%);
+  background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, #fdfdfd 50%);
   background-size: 220%;
   transition: all 0.4s;
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: black;
+  color: #1d4469;
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -242,7 +242,7 @@
 
 .navigation__checkbox:checked ~ #navigation {
   transform: translateY(2px);
-  box-shadow: inset 0px 2px 0px black;
+  box-shadow: inset 0px 2px 0px #1d4469;
 }
 
 @keyframes heartbeat {
@@ -309,12 +309,12 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: #1d4469;
   font-weight: 1000;
-  background-image: linear-gradient(to top, white 35%, transparent 35%);
+  background-image: linear-gradient(to top, #fdfdfd 35%, transparent 35%);
 }
 .link:hover {
-  background-color: white;
+  background-color: #fdfdfd;
 }
 .link::visited {
   text-decoration: none;
@@ -347,11 +347,11 @@
   }
 
   .link {
-    background-color: white;
+    background-color: #fdfdfd;
   }
 }
 .blog-box {
-  background-color: white;
+  background-color: #fdfdfd;
   flex-basis: 45%;
   position: relative;
   margin: 10px;
@@ -363,16 +363,16 @@
 .blog-box h4 {
   display: inline-block;
   font-family: "Roboto Mono", monospace;
-  color: black;
+  color: #1d4469;
   position: absolute;
   padding: 1em;
   top: 3em;
   z-index: 3;
-  background-color: white;
+  background-color: #fdfdfd;
 }
 .blog-box h4:hover, .blog-box h4:active {
-  background-color: black;
-  color: white;
+  background-color: #1d4469;
+  color: #fdfdfd;
 }
 .blog-box img {
   object-fit: cover;
@@ -384,8 +384,8 @@
 }
 .blog-box p {
   text-decoration: none;
-  color: black;
-  background-color: white;
+  color: #1d4469;
+  background-color: #fdfdfd;
 }
 
 .flexbox-container-blogpost {
@@ -405,7 +405,7 @@
 }
 
 #blog-photo {
-  background-color: white;
+  background-color: #fdfdfd;
   flex-basis: 45%;
   position: relative;
   margin: 10px;
@@ -419,12 +419,12 @@
 #blog-photo h4 {
   display: inline-block;
   font-family: "Roboto Mono", monospace;
-  color: black;
+  color: #1d4469;
   position: absolute;
   padding: 1em;
   top: 3em;
   z-index: 3;
-  background-color: white;
+  background-color: #fdfdfd;
 }
 
 #blog-info {
@@ -443,7 +443,7 @@
   .blog-box h4 {
     display: block;
     background-color: black;
-    color: white;
+    color: #fdfdfd;
   }
   .blog-box p {
     font-size: 75%;
@@ -490,7 +490,7 @@
 }
 
 .contact-box {
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 50%;
   flex-basis: 35%;
   position: relative;
@@ -507,19 +507,19 @@
 }
 
 #github:hover {
-  background-color: #ff3675;
+  background-color: #3c88df;
 }
 
 #twitter:hover {
-  background-color: #ffce00;
+  background-color: #9150db;
 }
 
 #linkedin:hover {
-  background-color: #2fd6af;
+  background-color: #e66858;
 }
 
 #email:hover {
-  background-color: #fe5d25;
+  background-color: #e4c53c;
 }
 
 @media screen and (max-width: 700px) {
@@ -577,7 +577,7 @@
   background-position: bottom;
   width: 100%;
   height: 30vh;
-  border: 3px black solid;
+  border: 3px #1d4469 solid;
 }
 #photo:hover {
   background-image: url(./images/louise-pic-01.jpg);
@@ -592,13 +592,13 @@
 .preference img {
   width: 10%;
   height: auto;
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 50%;
 }
 
 .line {
   width: 90%;
-  background-image: linear-gradient(to top, transparent 50%, black 50%, black 55%, transparent 55%);
+  background-image: linear-gradient(to top, transparent 50%, #1d4469 50%, #1d4469 55%, transparent 55%);
   position: relative;
 }
 .line .counter {
@@ -606,8 +606,8 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid black;
-  background-color: #ff3675;
+  border: 3px solid #1d4469;
+  background-color: #3c88df;
   z-index: 5;
   position: relative;
   top: 35%;
@@ -695,7 +695,7 @@
 .flexbox-container-projects img {
   object-fit: cover;
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid #1d4469;
   filter: grayscale(0%);
 }
 .flexbox-container-projects img:hover {
@@ -716,7 +716,7 @@
 }
 .project-box h4 {
   display: inline-block;
-  color: #ff3675;
+  color: #3c88df;
   position: absolute;
   padding: 1em;
   top: 3em;
@@ -724,7 +724,7 @@
 }
 .project-box h5 {
   display: inline-block;
-  color: white;
+  color: #fdfdfd;
   position: absolute;
   padding: 1em;
   top: 7em;
@@ -734,8 +734,8 @@
 .project-box a {
   text-decoration: none;
   display: inline-block;
-  color: black;
-  background-color: white;
+  color: #1d4469;
+  background-color: #fdfdfd;
   position: absolute;
   padding: 1em;
   top: 11em;
@@ -745,7 +745,7 @@
 }
 
 .project-title {
-  color: white;
+  color: #fdfdfd;
   display: none;
 }
 
@@ -770,7 +770,7 @@
     height: 300px;
     object-fit: cover;
     width: 100%;
-    border: 3px solid black;
+    border: 3px solid #1d4469;
     filter: grayscale(100%);
   }
   .flexbox-container-projects img:hover {
@@ -803,7 +803,7 @@
     display: none;
   }
   .project-box a {
-    background-color: #ffce00;
+    background-color: #9150db;
   }
 }
 @media screen and (min-width: 748px) {
@@ -843,20 +843,8 @@ p {
 }
 
 body {
-  background-color: #2fd6af;
+  background-color: #e66858;
   width: 100vw;
-}
-
-.yellow-shadow {
-  box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
-}
-
-.pink-shadow {
-  box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
-}
-
-.green-shadow {
-  box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
 }
 
 @keyframes slide-in-left {
@@ -891,11 +879,11 @@ body {
   height: 20px;
   margin-right: 15px;
   border-radius: 100%;
-  background-color: white;
-  border: 2px solid black;
+  background-color: #fdfdfd;
+  border: 2px solid #1d4469;
   display: inline-block;
   transform: translateY(-5px);
-  box-shadow: 0 5px 0 black;
+  box-shadow: 0 5px 0 #1d4469;
 }
 .button:hover {
   transform: translateY(5px);
@@ -903,7 +891,7 @@ body {
 }
 .button:active {
   transform: translateY(2px);
-  box-shadow: inset 0px 2px 0px black;
+  box-shadow: inset 0px 2px 0px #1d4469;
 }
 
 #left {
@@ -942,19 +930,19 @@ body {
 }
 
 .yellow {
-  background-color: #ffce00;
+  background-color: #9150db;
 }
 
 .pink {
-  background-color: #ff3675;
+  background-color: #3c88df;
 }
 
 .green {
-  background-color: #2fd6af;
+  background-color: #e66858;
 }
 
 .white {
-  background-color: white;
+  background-color: #fdfdfd;
 }
 
 @media screen and (min-width: 1500px) {

@@ -3,12 +3,12 @@
 $heading-font: "Raleway", sans-serif;
 $sub-heading-font: "Roboto Mono", monospace;
 
-$green: rgb(47, 214, 175);
-$pink: rgba(255, 54, 117, 1);
-$yellow: rgba(255, 206, 0, 1);
-$orange: rgba(254, 93, 37, 1);
-$black: rgba(0,0,0,1);
-$white: rgba(255, 255, 255, 1);
+$green:rgb(230, 104, 88);
+$pink: rgb(60, 136, 223);
+$yellow: rgb(145, 80, 219);
+$orange: rgb(228, 197, 60);
+$black: rgb(29, 68, 105);
+$white: rgb(253, 253, 253);
 
 @import "text-styles";
 @import "navigation";
@@ -39,15 +39,15 @@ body {
 }
 
 
-.yellow-shadow {
-    box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
-    }
-.pink-shadow {
-    box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
-        }
-.green-shadow {
-    box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
-    }
+// .yellow-shadow {
+//     box-shadow: 0 5px 10px rgba(255, 206, 0, 0.8);
+//     }
+// .pink-shadow {
+//     box-shadow: 0 5px 10px rgba(255, 54, 117, 0.8);
+//         }
+// .green-shadow {
+//     box-shadow: 0 5px 10px rgba(47, 214, 175, 0.8);
+//     }
 
 
 // ##################################################
