@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Mono:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Muli:300&display=swap");
 .long-text {
   display: none;
 }
@@ -24,7 +24,7 @@
   text-transform: lowercase;
 }
 .heading-primary .main {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka One", cursive;
   display: block;
   font-size: 11rem;
   animation: moveInLeft 1s ease-out;
@@ -32,13 +32,13 @@
 .heading-primary .sub {
   display: block;
   font-size: 1em;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
 }
 
 .further-sub {
   display: block;
   font-size: 1em;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
   background-color: black;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
@@ -50,14 +50,14 @@
 }
 
 .title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka One", cursive;
   display: block;
   font-size: 200%;
   animation: moveInLeft 1s ease-out;
 }
 
 .subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka One", cursive;
   display: block;
   font-size: 100%;
 }
@@ -165,7 +165,7 @@
   height: 1rem;
   border-radius: 0%;
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
   text-align: center;
   padding: 0;
 }
@@ -362,7 +362,7 @@
 }
 .blog-box h4 {
   display: inline-block;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
   color: black;
   position: absolute;
   padding: 1em;
@@ -400,7 +400,7 @@
   padding: 15px;
 }
 #blog-text p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka One", cursive;
   line-height: 1.5em;
 }
 
@@ -418,7 +418,7 @@
 }
 #blog-photo h4 {
   display: inline-block;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
   color: black;
   position: absolute;
   padding: 1em;
@@ -834,11 +834,11 @@
 }
 
 li {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka One", cursive;
 }
 
 p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Muli", sans-serif;
   font-size: 1.5em;
 }
 
