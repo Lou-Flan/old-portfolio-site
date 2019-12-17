@@ -41,11 +41,11 @@ All pages feature responsive layout design utilising flexbox and media queries, 
 
 
 
-#### ![sitemap](/Users/louiseflanagan/Documents/coder-academy/LouiseFlanagan_T1A3/docs/sitemap.jpg)
+#### 
 
 #### Screenshots
 
-#### ![home](/Users/louiseflanagan/Documents/coder-academy/LouiseFlanagan_T1A3/docs/home.jpg)**Target Audience**
+#### **Target Audience**
 
 The target audience is potential employers from creative tech companies in Sydney. 
 
