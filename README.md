@@ -14,6 +14,10 @@ Remote repository: https://github.com/Lou-Flan/portfolio-site
 
 This repository contains my first online portfolio written in HTML and SCSS. The repo contains all source files and presentation slides with initial wireframe designs and design choice explanations.
 
+**Brief**
+
+Create a portfolio website which presents you as a dev and IT professional. The purpose is to provide an online portfolio that provides information about you, your skills, interests, professional knowledge and a showcase of your work.
+
 ### **Purpose**
 
 The purpose of this website, is to showcase my current programming skills and projects to potential employers. It is also intended to provide a means of contact and an insight into my personality.
@@ -46,6 +50,8 @@ All pages feature responsive layout design utilising flexbox and media queries, 
   - Two recent projects including title, tech stack and description.
 - Blog
   - Five sample blogs including title, date of publication and sample text.
+
+Alternative versions of the site, including font changes and different colour scheme can be found in the branches.
 
 
 ------
