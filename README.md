@@ -53,6 +53,8 @@ All pages feature responsive layout design utilising flexbox and media queries, 
 
 Alternative versions of the site, including font changes and different colour scheme can be found in repo the branches.
 
+The site also utilises sub resource integrity using sha-512.
+
 
 ------
 
