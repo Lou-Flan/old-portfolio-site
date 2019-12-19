@@ -98,7 +98,7 @@
 // button is the styling that the user can see as the menu icon 
 .button {
     background-color: $white;
-    border: black;
+    border: $black;
     border-style: solid;
     border-radius: 50%;
     z-index: 11;
@@ -215,17 +215,19 @@
 @keyframes bounce {
   from {
             transform: scale(1);
+            transform-origin: center;
             // animation-timing-function: ease-in;
   }
   50% {
-            transform: scale(0.6);
+            transform: scale(0.4);
+            transform-origin: center;
             // animation-timing-function: ease-in;
   }
  
-  80% {
-            transform: scale(1);
-            // animation-timing-function: ease-in;
-  }
+  // 80% {
+  //           transform: scale(1);
+  //           // animation-timing-function: ease-in;
+  // }
 }
 
 

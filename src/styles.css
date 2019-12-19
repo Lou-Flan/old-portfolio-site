@@ -248,12 +248,11 @@
 @keyframes bounce {
   from {
     transform: scale(1);
+    transform-origin: center;
   }
   50% {
-    transform: scale(0.6);
-  }
-  80% {
-    transform: scale(1);
+    transform: scale(0.4);
+    transform-origin: center;
   }
 }
 .footer__list {
@@ -874,7 +873,7 @@ body {
   display: none;
 }
 
-.button {
+.radio-button {
   width: 20px;
   height: 20px;
   margin-right: 15px;
@@ -885,11 +884,11 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 5px 0 black;
 }
-.button:hover {
+.radio-button:hover {
   transform: translateY(5px);
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0);
 }
-.button:active {
+.radio-button:active {
   transform: translateY(2px);
   box-shadow: inset 0px 2px 0px black;
 }
