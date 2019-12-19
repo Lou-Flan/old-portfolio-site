@@ -51,7 +51,7 @@ All pages feature responsive layout design utilising flexbox and media queries, 
 - Blog
   - Five sample blogs including title, date of publication and sample text.
 
-Alternative versions of the site, including font changes and different colour scheme can be found in the branches.
+Alternative versions of the site, including font changes and different colour scheme can be found in repo the branches.
 
 
 ------
