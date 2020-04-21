@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>projects</title>
     <link rel="icon" href="./images/favicon-01.png" type="image/png">
-    <link integrity="sha-512-pQlVP1fD/bnCwroBF99i+ztsqPZRnljEPX2yHrBWmITVqCKv20gQvs4RTfJ/OzriDAvKJniO5BWgSQP46IxxKw==" rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body class="pink">
@@ -23,7 +23,7 @@
             <ul class="navigation__list">
                 <li class="navigation__item"><a class="navigation__link" href="../index.html">Home</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="./about.html">About</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="./blog.html">Blog</a></li>
+                <!-- <li class="navigation__item"><a class="navigation__link" href="./blog.html">Blog</a></li> -->
                 <li class="navigation__item"><a class="navigation__link" href="./projects.html">Projects</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="./contact.html">Contact</a></li>
             </ul>
@@ -33,8 +33,14 @@
             <ul class="navbar__list">
                 <li class="navbar__item" id="home"><a class="nav-bar__link" href="../index.html">home</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="./about.html">about</a></li>
-                <li class="navbar__item"><a class="nav-bar__link" href="./blog.html">blog</a></li>
+                <!-- <li class="navbar__item"><a class="nav-bar__link" href="./blog.html">blog</a></li> -->
                 <li class="navbar__item"><a class="nav-bar__link" href="./projects.html">projects</a></li>
+                <li class="navbar__item"><a class="nav-bar__link" href="https://github.com/Lou-Flan"
+                    target="_blank">github</a></li>
+            <li class="navbar__item"><a class="nav-bar__link" href="https://dev.to/flangerhanger"
+                    target="_blank">dev.to</a></li>
+            <li class="navbar__item"><a class="nav-bar__link" href="https://twitter.com/FlangerHanger"
+                    target="_blank">twitter</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="./contact.html">contact</a></li>
             </ul>
         </nav>
@@ -47,32 +53,80 @@
             <h1 class="heading-primary">
                 <span class="heading-primary title short-text">projects.</span>
                 <span class="heading-primary title medium-text">recent work.</span>
-                <span class="heading-primary title long-text">a collection of cool stuff i've made.</span>
+                <span class="heading-primary title long-text">a collection of fun stuff i've made.</span>
             </h1>
         </div>
 
         <section class="flexbox-container-projects">
-            <div class="project-box" id="project-one-image">
-                <img src="./images/bot-dog.jpg" alt="dog">
-                <h4 class="further-sub">bot dog</h4>
-                <h5 class="further-sub">ruby terminal app</h5>
-                <a class="further-sub" href="https://github.com/Lou-Flan/bot-dog" target="_blank">repo</a>
-            </div>
-            <div class="project-box" id="project-one-text">
-                <h2 class="project-title title">bot dog</h2>
-                <h2 class="project-title further-sub">ruby terminal app</h2>
-                <p>Due to little time, small city homes and many offices not allowing pets at work, many developers miss
-                    out on having a pet dog. <span class="link">BotDog is a Tamagotchi style game</span>, written in
-                    Ruby and executed from the command line giving users a pet dog to feed, pat and play with.</p>
+            <div class="project-box">
+                <img src="./images/devduckswap.png" alt="duck site">
+                <!-- <h4 class="further-sub">dev-duck-swap</h4>
+                <h5 class="further-sub">ruby on rails two-sided marketplace</h5> -->
+                <a class="further-sub repo" href="https://github.com/Lou-Flan/rubber_ducky" target="_blank">repo</a>
+                <!-- </div>
+                    <div class="project-box" id="project-one-text"> -->
+                <h2 class="project-title title">dev-duck-swap</h2>
+                <h2 class="project-title further-sub">ruby on rails two-sided marketplace</h2>
+                <p>The <a class="link" href="https://ducks-n-devs.herokuapp.com/"
+                        target="_blank">dev-duck-swap</a> market place application provides a two-sided market-place for developers to find, buy and sell experienced debugging ducks.</p>
             </div>
 
-            <div class="project-box" id="project-two-image">
-                <img src="./images/project2.jpg" alt="website screenshot">
-                <h4 class="further-sub">portfolio site</h4>
-                <h5 class="further-sub">html & scss</h5>
-                <a class="further-sub" href="https://github.com/Lou-Flan/portfolio-site" target="_blank">repo</a>
+            <div class="project-box">
+                    <img src="./images/link.png" alt="dog">
+                    <!-- <h4 class="further-sub">link drawing</h4>
+                    <h5 class="further-sub">pure CSS art</h5> -->
+                    <a class="further-sub repo" href="https://codepen.io/louflan/pen/ExjdOaV" target="_blank">codepen</a>
+                    <!-- </div>
+                <div class="project-box" id="project-one-text"> -->
+                    <h2 class="project-title title">link drawing</h2>
+                    <h2 class="project-title further-sub">pure CSS art</h2>
+                    <p>Drawing with CSS using border radius and gradients</p>
+                </div>
+
+
+            <div class="project-box">
+                <img src="./images/bot-dog.jpg" alt="dog">
+                <!-- <h4 class="further-sub">bot dog</h4>
+                <h5 class="further-sub">ruby terminal app</h5> -->
+                <a class="further-sub repo" href="https://github.com/Lou-Flan/bot-dog" target="_blank">repo</a>
+                <!-- </div>
+            <div class="project-box" id="project-one-text"> -->
+                <h2 class="project-title title">bot dog</h2>
+                <h2 class="project-title further-sub">ruby terminal app</h2>
+                <p><span class="link">BotDog is a Tamagotchi style game</span>, giving devs a pet dog to feed, pat and play with from the command line.</p>
             </div>
-            <div class="project-box" id="project-two-text">
+
+            <div class="project-box">
+                    <img src="./images/duck.png" alt="duck">
+                    <!-- <h4 class="further-sub">debug duck</h4>
+                    <h5 class="further-sub">CSS & JS art</h5> -->
+                    <a class="further-sub repo" href="https://codepen.io/louflan/pen/PoPzqLV" target="_blank">codepen</a>
+                    <!-- </div>
+                <div class="project-box" id="project-one-text"> -->
+                    <h2 class="project-title title">debug duck</h2>
+                    <h2 class="project-title further-sub">CSS & JS art</h2>
+                    <p>Drawing with CSS using border radius and gradients</p>
+                </div>
+
+                <div class="project-box">
+                        <img src="./images/pikachu.png" alt="pikachu">
+                        <!-- <h4 class="further-sub">pikachu drawing</h4>
+                        <h5 class="further-sub">animated CSS art</h5> -->
+                        <a class="further-sub repo" href="https://codepen.io/louflan/pen/YzXvVPx" target="_blank">codepen</a>
+                        <!-- </div>
+                    <div class="project-box" id="project-one-text"> -->
+                        <h2 class="project-title title">pikachu drawing</h2>
+                        <h2 class="project-title further-sub">animated CSS art</h2>
+                        <p>Drawing with CSS using border radius and gradients</p>
+                    </div>
+
+            <div class="project-box">
+                <img src="./images/project2.jpg" alt="website screenshot">
+                <!-- <h4 class="further-sub">portfolio site</h4>
+                <h5 class="further-sub">html & scss</h5> -->
+                <a class="further-sub repo" href="https://github.com/Lou-Flan/portfolio-site" target="_blank">repo</a>
+            <!-- </div>
+            <div class="project-box" id="project-two-text"> -->
                 <h2 class="project-title title">portfolio site</h2>
                 <h2 class="project-title further-sub">html & scss</h2>
                 <p><span class="link">This is my very first website creation</span> using HTML & SCSS! I love colour and
@@ -86,11 +140,14 @@
             <ul class="footer__list" id="projects">
                 <li class="navbar__item"><a class="nav-bar__link" href="https://github.com/Lou-Flan"
                         target="_blank">github</a></li>
+                <li class="navbar__item"><a class="nav-bar__link" href="https://dev.to/flangerhanger"
+                        target="_blank">dev.to</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="https://twitter.com/FlangerHanger"
                         target="_blank">twitter</a></li>
                 <li class="navbar__item"><a class="nav-bar__link" href="https://www.linkedin.com/in/louise-flanagan/"
                         target="_blank">linkedin</a></li>
-                <li class="navbar__item"><a class="nav-bar__link" href="./Louise_Flanagan_Resume.pdf" target="_blank">resume</a></li>
+                <li class="navbar__item"><a class="nav-bar__link" href="./Louise_Flanagan_Resume.pdf"
+                        target="_blank">resume</a></li>
             </ul>
         </nav>
 
